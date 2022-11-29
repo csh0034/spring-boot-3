@@ -1,1 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
 
+  sql:
+    init:
+      data-locations: classpath:db/data.sql
+
+  jpa:
+    properties:
+      hibernate:
+        show_sql: false
+        format_sql: true
+    open-in-view: false
+    defer-datasource-initialization: true
+
+sample:
+  key1: value1...
+
+logging:
+  level:
+    "[com.ask]": debug
+    "[org.hibernate.SQL]": debug # log just the SQL
+
+    ### log JDBC bind parameters and extracted values ###
+    "[org.hibernate.type]": trace
+    "[org.hibernate.orm.jdbc.bind]": trace # 바인딩된 파라미터 값(Hibernate 6), 이전엔 BasicBinder fqcn 이었음
+    "[org.hibernate.orm.jdbc.extract]": trace
