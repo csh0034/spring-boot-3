@@ -14,7 +14,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
-@EnableMethodSecurity
+@EnableMethodSecurity // @EnableGlobalMethodSecurity 에서 변경됨
 public class SecurityConfig {
 
   @Bean
