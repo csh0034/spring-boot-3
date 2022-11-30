@@ -1,13 +1,16 @@
 package com.ask.boot.user;
 
+import com.ask.boot.InitializeRunner;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
+import org.springframework.context.annotation.Import;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 
 @DataJpaTest
+@Import(InitializeRunner.class)
 @Slf4j
 class UserRepositoryTest {
 
@@ -18,8 +21,8 @@ class UserRepositoryTest {
   private TestEntityManager entityManager;
 
   @Test
-  void findById() {
-    User user = userRepository.findById("user01").orElseThrow();
+  void findByName() {
+    User user = userRepository.findByName("user01").orElseThrow();
     log.info("user: {}", user);
   }
 
