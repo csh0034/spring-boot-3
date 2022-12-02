@@ -16,3 +16,4 @@ Cloud Native Buildpack + Docker 도 사용 가능
 ## 참조
 
 - [Baeldung, Spring Boot 3 and Spring Framework 6.0 – What’s New](https://www.baeldung.com/spring-boot-3-spring-6-new)
+- [Baeldung, Native Images with Spring Boot and GraalVM](https://www.baeldung.com/spring-native-intro)
