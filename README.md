@@ -13,6 +13,11 @@ Cloud Native Buildpack + Docker 도 사용 가능
 - intellij run: 1.944 seconds
 - native application: 0.14 seconds
 
+## Spring Native + AWS Lambda
+
+- [Spring Native + AWS Lambda: Part 1 - The Code](https://neilwhite.ca/spring-native-aws-lambda-part-1-the-code/)
+- [Fast Spring Boot AWS Lambdas with GraalVM](https://dzone.com/articles/fast-spring-boot-aws-lambdas-with-graalvm)
+
 ## 참조
 
 - [Baeldung, Spring Boot 3 and Spring Framework 6.0 – What’s New](https://www.baeldung.com/spring-boot-3-spring-6-new)
