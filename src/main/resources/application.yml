@@ -20,6 +20,6 @@ logging:
     "[org.hibernate.SQL]": debug # log just the SQL
 
     ### log JDBC bind parameters and extracted values ###
-    "[org.hibernate.type]": trace
+#    "[org.hibernate.type]": trace
     "[org.hibernate.orm.jdbc.bind]": trace # 바인딩된 파라미터 값(Hibernate 6), 이전엔 BasicBinder fqcn 이었음
-    "[org.hibernate.orm.jdbc.extract]": trace
+#    "[org.hibernate.orm.jdbc.extract]": trace
